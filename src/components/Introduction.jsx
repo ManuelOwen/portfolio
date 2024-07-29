@@ -3,8 +3,8 @@ import bg from "../images/background.jpeg"
 
 const Introduction = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen m-0 p-0">
-    <div className="hero-content flex-col lg:flex-row m-0 p-0 pb-0">
+    <div className="hero bg-gray-100 min-h-screen m-0 p-0 text-gray-900">
+    <div className="hero-content flex-col lg:flex-row m-0 p-0 pb-0 ">
       <img
         className="mt-0 max-w-sm rounded-lg shadow-2xl"
         src={bg}

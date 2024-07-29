@@ -12,7 +12,7 @@
     <div className="grid grid-flow-col gap-4">
       <a>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          // xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -23,7 +23,7 @@
       </a>
       <a>
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.youtube.com/channel/UCUO3vjZRO0lNnGZRvTAiZ5Q"
           width="24"
           height="24"
           viewBox="0 0 24 24"
