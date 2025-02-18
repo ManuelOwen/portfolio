@@ -5,6 +5,9 @@ import About from "./components/About"
 import Experience from "./pages/Experience"
 import Technologies from "./pages/Technologies"
 import Community from "./pages/Community"
+import Photos from "./pages/photos"
+
+
 
 function App() {
   return (
@@ -14,7 +17,8 @@ function App() {
       <About />
       <Experience /> 
       <Community />  
-      <Technologies />  
+      <Technologies /> 
+      <Photos/> 
       <Footer />
       
     </div>

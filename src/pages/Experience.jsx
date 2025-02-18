@@ -2,23 +2,38 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <div className="experience font-medium text-xl w-11/12 mx-auto p-8 mt-10 text-gray-100 bg-gray-900">
-      <h1 className="text-center text-purple-500 text-4xl mb-10">Experience</h1>
-      <div className="md:flex-row justify-around">
-        <div className="border-2 border-gray-300 p-5 rounded-lg text-center items-center mb-5 bg-gray-800 mx-2">
-          <h2 className="text-2xl text-green-600">Software Engineering Industrial Attachee at Teach2Give</h2>
-          <p className="text-gray-300 my-5">Participated in an intensive, hands-on software engineering training program focused on modern web development technologies and practices. Engaged in collaborative projects, demonstrating strong teamwork and problem-solving abilities.</p>
-          <p className="text-blue-500">May 2024 – update</p>
-          <button className='bg-blue-400 mt-6 h-10 w-40 rounded-md text-gray-200 animate-bounce hover:bg-cyan-500'>See Certificate</button>
+    <div className="experience font-medium text-xl w-full mx-auto p-8 mt-10 text-gray-100 bg-gradient-to-r from-black via-gray-900 to-purple-900 rounded-lg shadow-lg">
+      <h1 className="text-left text-blue-400 text-5xl font-bold mb-6">EXPERIENCE</h1>
+      <hr className="border-blue-400 w-16 mb-8" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex items-center space-x-4">
+          {/* <span className="text-blue-400 text-3xl">&#x21D2;</span> */}
+          <div>
+            <h3 className="text-xl text-white-400 font-semibold">The Jitu software development training</h3>
+            <p className="text-gray-300">May 2023 - July 2023</p>
+            <p className="text-gray-400 mt-2">Gained strong skills in web development and skills in HTML, CSS, React, Nodejs, my SQL, Microsoft Azure </p> <br />
+
+            <button className="bg-blue-900 hover:bg-blue-700 text-gray-200 hover:scale-105 transition:duration-600 font-bold py-2 px-4 rounded transition duration-300">
+ see certificate.
+</button>
+          </div>
         </div>
-        <div className="border-2 border-gray-300 p-5 rounded-lg text-center items-center mb-5 bg-gray-800 mx-2 ">
-          <h2 className="text-2xl text-green-600">Software Engineering Training at The Jitu</h2>
-          <p className="text-gray-300 my-5">I attendend a three-month intensisive hands on training at the jitu.Over the three month I was ablbe to train  on fullstack web development, peer to peer learning,problem solving and also softskills.</p>
-          <p className="text-blue-500">October 2022 – update</p>
-          <button className='bg-blue-400 mt-6 h-10 w-40 rounded-md text-gray-200 animate-bounce hover:bg-cyan-500'>see Certificate</button>
+        <div className="flex items-center space-x-4">
+         
+          <div>
+            <h3 className="text-xl text-white font-semibold">Software development training at Teach2Give</h3>
+            <p className="text-gray-300">May 2024 - July 2024</p>
+            <p className="text-gray-400 mt-2">Gained skills in software development using technologies like react, Typescript, Drizzle-orm, Postgre and Neon Database and Microsoft Azure. </p>
+              <br />
+              <button className="bg-blue-900 hover:bg-blue-700 text-gray-200 hover:scale-105 transition:duration-600 font-bold py-2 px-4 rounded transition duration-300">
+ see certificate.
+</button>
+          </div>
         </div>
-      
+        
       </div>
+      
+      
     </div>
   );
 };

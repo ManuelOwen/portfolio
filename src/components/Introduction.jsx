@@ -1,27 +1,34 @@
-import React from 'react'
-import bg from "../images/background.jpeg"
+import React from 'react';
+import bg from "../images/background.jpeg";
 
 const Introduction = () => {
   return (
-    <div className="hero bg-gray-100 min-h-screen m-0 p-0 text-gray-900">
-    <div className="hero-content flex-col lg:flex-row m-0 p-0 pb-0 ">
-      <img
-        className="mt-0 max-w-sm rounded-lg shadow-2xl"
-        src={bg}
-        alt="Background"
-      />
-      <div>
-        <h1 className="text-5xl font-bold text-red-900">Hello,</h1>
-        <h1 className="text-5xl font-bold">I am Emmanuel Kibet</h1>
-        <p className="py-6">
-          I am a passionate software developer with keen interest in web development, cloud services, and mobile development. I am a self-taught developer with a strong desire to learn and grow in the tech industry.
-        </p>
-        <button className="btn btn-primary">Download Resume</button>
+    <div className="relative min-h-screen bg-gradient-to-r from-black via-gray-900 to-purple-900 text-white flex items-center justify-center px-6">
+      
+      {/* Content Section */}
+      <div className="flex flex-col-reverse lg:flex-row items-center max-w-5xl mx-auto">
+        {/* Text Section */}
+        <div className="lg:w-1/2 text-left ml-2 mb-32">
+          <p className="text-blue-400 italic">Hello !!!</p>
+          <h1 className="text-5xl font-bold mt-2">I'm <span className="text-gray-300">Emmanuel  Kibet</span></h1>
+         
+          <p className="mt-6 text-gray-400 leading-relaxed">
+        I am a software Engineer mainly passionate in software development and an author of technical blogs
+          </p>
+          <p className="bg-blue-500 text-black inline-block px-4 py-1 mt-4 text-sm uppercase font-semibold rounded-md">See my  Resume</p>
+        </div>
+        
+        {/* Image Section */}
+        <div className="lg:w-1/2 flex justify-center">
+          <img src={bg} className="max-w-md lg:max-w-lg grayscale shadow-lg transform -translate-y-6" alt="Profile" />
+        </div>
       </div>
+      
+      
+      {/* Footer */}
+     
     </div>
-  </div>
-  
-)
-}
+  );
+};
 
-export default Introduction
+export default Introduction;

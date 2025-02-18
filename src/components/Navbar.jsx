@@ -1,38 +1,19 @@
 
 
 const Navbar = () => {
-    return (
-<div className="navbar bg-white md:flex md:items-center md: justify-between text-gray-900  ">
-
-  <div className="flex-1">
-    <div className="items"  class ="flex-end"> 
-      <ul class ="md:flex md:items-center">
-        <li 
-       class ="flex-end cursor-pointer text-20px hover:text-cyan-500 duration-500 mx-4">Introduction
-        </li>
-        <li 
-        
-        class ="flex-end cursor-pointer text-20px hover:text-cyan-500 duration-500 mx-4 ">About
-
-        </li>
-        <li 
-        class ="flex-end cursor-pointer text-20px hover:text-cyan-500 duration-500 mx-4">Skills
-        </li>
-        <li 
-        class ="flex-end cursor-pointer text-20px hover:text-cyan-500 duration-500 mx-4">Experience
-        </li>
-        <li
-         class ="flex-end cursor-pointer text-20px hover:text-cyan-500 duration-500 mx-4 ">Technologies
-         </li>
-       
-
-      </ul>
-
+  return (
+    <div className="navbar bg-gradient-to-r from-black via-gray-900 to-purple-900 text-white flex items-center justify-center px-6 py-4">
+    <div className="flex-2">
+        <ul className="flex items-center justify-center space-x-10">
+            <li className="cursor-pointer text-sm uppercase hover:text-blue-400 duration-500">Introduction</li>
+            <li className="cursor-pointer text-sm uppercase hover:text-blue-400 duration-500">About</li>
+            <li className="cursor-pointer text-sm uppercase hover:text-blue-400 duration-500">Skills</li>
+            <li className="cursor-pointer text-sm uppercase hover:text-blue-400 duration-500">Experience</li>
+            <li className="cursor-pointer text-sm uppercase hover:text-blue-400 duration-500">Technologies</li>
+        </ul>
     </div>
-  </div>
-  
 </div>
-    )
+  );
 };
 
 export default Navbar;
