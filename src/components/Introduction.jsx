@@ -3,7 +3,7 @@ import bg from "../images/background.jpeg";
 
 const Introduction = () => {
   return (
-    <div className="relative min-h-screen bg-gradient-to-r from-black via-gray-900 to-purple-900 text-white flex items-center justify-center px-6">
+    <div className="relative min-h-screen  text-white flex items-center justify-center px-6">
       
       {/* Content Section */}
       <div className="flex flex-col-reverse lg:flex-row items-center max-w-5xl mx-auto">
@@ -14,8 +14,13 @@ const Introduction = () => {
          
           <p className="mt-6 text-gray-400 leading-relaxed">
         I am a software Engineer mainly passionate in software development and an author of technical blogs
-          </p>
+          </p><br />
           <p className="bg-blue-500 text-black inline-block px-4 py-1 mt-4 text-sm uppercase font-semibold rounded-md">See my  Resume</p>
+        </div>
+        <div>
+      
+
+          
         </div>
         
         {/* Image Section */}

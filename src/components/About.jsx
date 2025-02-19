@@ -4,7 +4,7 @@ import kyu from "../images/logo kyu.png";
 
 const About = () => {
   return (
-    <div className="w-full p-8 mt-10 text-gray-100 bg-gradient-to-r from-black via-gray-900 to-purple-900 shadow-lg">
+    <div className="w-full p-8 mt-10 text-gray-100 shadow-lg">
       <div className="container mx-auto">
         {/* About Me Section */}
         <section className="mb-12">

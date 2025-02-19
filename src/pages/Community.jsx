@@ -1,7 +1,6 @@
 import React from 'react';
 import beta from '../images/LevelBeta.png';
 import csk from '../images/logo csk.png';
-// import kahawa from '../assets/license/kahawa.png';
 
 const Community = () => {
   const education = [
@@ -19,33 +18,26 @@ const Community = () => {
       link: 'https://www.linkedin.com/company/computer-society-of-kirinyaga/posts/?feedView=all',
       image: csk,
     },
-    // {
-    //   id: 3,
-    //   name: 'Koding & Kahawa Developers Community',
-    //   description: 'The aim of the Koding and Kahawa meetups is to nurture, enable and encourage a vibrant, supportive, and inclusive coding community. My role was to collaborate with other students in a web development journey.',
-    //   link: 'https://www.linkedin.com/company/koding-kahawa/',
-    //   image: kahawa,
-    // },
   ];
 
   return (
-    <div className="md:px-10 px-7 my-8" id="license">
-      <hr />
-      <div className="md:flex my-7 items-center justify-center">
-        <div className="text-primary text-5xl font-bold items-center">🌍 Community Engagement 🧑🏻‍🤝‍🧑🏾</div>
-      </div>
-      <div className='grid md:grid-cols-3 my-8 gap-5 cursor-pointer'>
+    <div className="w-full mx-auto p-8 mt-10 text-gray-100 rounded-lg shadow-lg">
+      <h1 className="text-left text-blue-400 text-5xl font-bold mb-6">🌍 COMMUNITY ENGAGEMENT 🧑🏻‍🤝‍🧑🏾</h1>
+ 
+      <div className='grid md:grid-cols-2 gap-8 '>
         {education.map((school) => (
-          <div key={school.id} className='flex flex-col justify-center items-center p-6 text-center text-white'>
-            <img src={school.image} alt={school.name} className='mb-3' width={150} height={120} />
-            <h6 className='text-2xl my-4 text-blue-500'>{school.name}</h6>
-            <p className='text-base'>{school.description}</p>
-            <button className="btn border-2 border-blue-600 transition-all duration-500 py-2 px-6 rounded-3xl text-white hover:bg-blue-600 hover:text-green-500">
+          <div key={school.id} className='flex flex-col items-center text-center hover:scale-105  p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300'>
+            <img src={school.image} alt={school.name} className='mb-3 rounded-lg' width={150} height={120} />
+            <h6 className='text-2xl my-4 text-blue-400 font-semibold'>{school.name}</h6>
+            <p className='text-gray-300 '>{school.description}</p>
+            <button className="mt-4 border-2 border-blue-600 py-2 px-6 rounded-3xl text-white bg-transparent hover:bg-blue-600 hover:text-black transition-all">
               <a href={school.link} target="_blank" rel="noopener noreferrer">My Bio</a>
             </button>
           </div>
         ))}
       </div>
+      
+    
     </div>
   );
 };
