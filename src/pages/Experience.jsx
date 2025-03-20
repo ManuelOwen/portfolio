@@ -3,8 +3,8 @@ import React from 'react';
 const Experience = () => {
   return (
     <div className="experience font-medium text-xl w-full mx-auto p-8 mt-10 text-gray-100  rounded-lg shadow-lg">
-      <h1 className="text-left text-blue-400 text-5xl font-bold mb-6">EXPERIENCE</h1>
-      <hr className="border-blue-400 w-16 mb-8" />
+      <h1 className="text-center text-blue-400 text-4xl font-bold mb-6">EXPERIENCE</h1>
+     
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex items-center space-x-4">
           {/* <span className="text-blue-400 text-3xl">&#x21D2;</span> */}

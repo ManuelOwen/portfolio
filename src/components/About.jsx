@@ -10,7 +10,7 @@ const About = () => {
         <section className="mb-12">
           <h1 className="text-center text-blue-400 text-4xl mb-8 font-bold">About Me</h1>
           <p className="text-justify leading-8 font-sans mb-10">
-            I am a Software Engineering student at Kirinyaga University, Kenya. Throughout my academic journey, I have gained both theoretical knowledge and practical skills, building a strong foundation in software engineering. I am proficient in a versatile tech stack, including React.js, Node.js, Express.js, and Microsoft SQL Server. My expertise extends to cloud platforms like Microsoft Azure, state management with Redux Toolkit, caching with Redis, containerization with Docker, and version control with Git. I am committed to continuous learning and innovation in the ever-evolving field of software engineering.
+            I am a Software Engineering student at Kirinyaga University, Kenya. Throughout my academic journey, I have gained both theoretical knowledge and practical skills, building a strong foundation in software engineering. I am proficient in a versatile tech stack, including javascript, Drizzle-orm React.js, Node.js, Express.js,hono.js, python, django and Microsoft SQL Server. My expertise extends to cloud platforms like Microsoft Azure, state management with Redux Toolkit, caching with Redis, containerization with Docker, and version control with Git.I am also a technical blog writer I am committed to continuous learning and innovation in the ever-evolving field of software engineering.
           </p>
         </section>
 

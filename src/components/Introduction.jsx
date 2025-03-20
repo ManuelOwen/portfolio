@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../images/background.jpeg";
+import owen from '../images/owen.jpg'
 
 const Introduction = () => {
   return (
@@ -25,7 +25,7 @@ const Introduction = () => {
         
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center">
-          <img src={bg} className="max-w-md lg:max-w-lg grayscale shadow-lg transform -translate-y-6" alt="Profile" />
+          <img src={owen} className="max-w-md lg:max-w-lg  shadow-lg transform -translate-y-2" alt="Profile" />
         </div>
       </div>
       

@@ -5,6 +5,8 @@ import About from "./components/About"
 import Experience from "./pages/Experience"
 import Technologies from "./pages/Technologies"
 import Community from "./pages/Community"
+import Projects from "./pages/Projects"
+import {BrowserRouter,router,routes} from 'react-router-dom'
 // import Photos from "./pages/photos"
 
 
@@ -12,11 +14,13 @@ import Community from "./pages/Community"
 function App() {
   return (
     <div className="bg-gradient-to-r from-black via-gray-900 to-purple-900">
+      <>Browser</>
       <Navbar />
       <Introduction />
       <About />
       <Experience /> 
-      <Community />  
+      <Community /> 
+      <Projects /> 
       <Technologies /> 
       {/* <Photos/>  */}
       <Footer />
