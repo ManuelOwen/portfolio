@@ -1,6 +1,7 @@
 import React from 'react';
 import beta from '../images/LevelBeta.png';
 import csk from '../images/logo csk.png';
+import Navbar from '../components/Navbar';
 
 const Community = () => {
   const education = [
@@ -21,8 +22,10 @@ const Community = () => {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="w-full mx-auto p-8 mt-10 text-gray-100 rounded-lg shadow-lg">
-      <h1 className="text-left text-blue-400 text-5xl font-bold mb-6">🌍 COMMUNITY ENGAGEMENT 🧑🏻‍🤝‍🧑🏾</h1>
+      <h1 className="text-center text-blue-400 text-3xl font-bold mb-6">🌍 Community Engagement 🧑🏻‍🤝‍🧑🏾</h1>
  
       <div className='grid md:grid-cols-2 gap-8 '>
         {education.map((school) => (
@@ -39,6 +42,7 @@ const Community = () => {
       
     
     </div>
+    </>
   );
 };
 

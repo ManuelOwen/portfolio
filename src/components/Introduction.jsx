@@ -1,8 +1,11 @@
 import React from 'react';
 import owen from '../images/owen.jpg'
+import Navbar from './Navbar';
 
 const Introduction = () => {
   return (
+    <>
+    <Navbar />
     <div className="relative min-h-screen  text-white flex items-center justify-center px-6">
       
       {/* Content Section */}
@@ -15,7 +18,13 @@ const Introduction = () => {
           <p className="mt-6 text-gray-400 leading-relaxed">
         I am a software Engineer mainly passionate in software development and an author of technical blogs
           </p><br />
-          <p className="bg-blue-500 text-black inline-block px-4 py-1 mt-4 text-sm uppercase font-semibold rounded-md">See my  Resume</p>
+          <div className='mt-5'>
+                        <a href="https://drive.google.com/file/d/1heQWkg97uL-V9FsbjJDUHgG-_IDmHIl2/view?usp=sharing">
+                            <button className='btn transition-all duration-500 shadow-sm bg-primary py-2 px-4 rounded-xl text-white hover:bg-white hover:text-primary'>
+                                Download Resume
+                            </button>
+                        </a>
+                    </div>
         </div>
         <div>
       
@@ -33,6 +42,7 @@ const Introduction = () => {
       {/* Footer */}
      
     </div>
+    </>
   );
 };
 
