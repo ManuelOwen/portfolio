@@ -10,6 +10,8 @@ import postgresql from "../images/postgre sql.png"
 import figma from "../images/figma logo.png"
 import git from "../images/git logo.jpg"
 import azure from "../images/azure logo.jpg"
+import Hono from "../images/honoimg.jpeg"
+import drizzle from "../images/drizzle orm.png"
 
 const Technologies = () => {
   const technologies = [
@@ -24,6 +26,8 @@ const Technologies = () => {
     { id: 9, name: 'Figma', link: 'https://www.figma.com/', image: figma },
     { id: 10, name: 'Git ', link: 'https://git-scm.com/', image: git },
     { id: 11, name: 'Microsoft Azure', link: 'https://azure.microsoft.com/', image: azure },
+    { id: 12, name: 'Hono ', link: 'https://hono.dev/docs/', image: Hono },
+    { id: 13, name: 'Drizzle ORM', link: 'https://bestofjs.org/', image: drizzle },
   ];
 
   return (
