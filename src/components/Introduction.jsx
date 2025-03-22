@@ -1,5 +1,5 @@
 import React from 'react';
-import owen from '../images/owen.jpg'
+import owen from '../images/OWENK.jpg'
 import Navbar from './Navbar';
 
 const Introduction = () => {
