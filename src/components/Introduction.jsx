@@ -16,15 +16,20 @@ const Introduction = () => {
           <h1 className="text-5xl font-bold mt-2">I'm <span className="text-gray-300">Emmanuel  Kibet</span></h1>
          
           <p className="mt-6 text-gray-400 leading-relaxed">
-        I am a software Engineer mainly passionate in software development and an author of technical blogs
+        <ul>
+          <li>- I am a Software Engineer</li>
+          <li>- I am a Technical Blog writter</li>
+          <li>- I am a Microsoft Learn Student Ambassador(Beta milestone)</li>
+        </ul>
           </p><br />
           <div className='mt-5'>
-                        <a href="https://drive.google.com/file/d/1heQWkg97uL-V9FsbjJDUHgG-_IDmHIl2/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/13fiXsMyGD87AvZCrb5SMkjeWhCOEcFPV/view?usp=drive_link">
                             <button className='btn transition-all duration-500 shadow-sm bg-primary py-2 px-4 rounded-xl text-white hover:bg-white hover:text-primary'>
                                 Download Resume
                             </button>
                         </a>
                     </div>
+
         </div>
         <div>
       
