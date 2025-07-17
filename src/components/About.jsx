@@ -1,51 +1,115 @@
-import React from 'react';
+
+import { motion } from 'framer-motion';
 import logo from "../images/kbhs logo.webp";
 import kyu from "../images/logo kyu.png";
 
 const About = () => {
+  const skills = [
+    'React.js', 'Node.js', 'Express.js', 'TypeScript', 'Hono.js',
+    'Drizzle ORM', 'Python', 'Django', 'Microsoft SQL Server',
+    'Microsoft Azure', 'Redux Toolkit', 'Docker', 'Git', 'Redis','nest.js','tailwind css','typescript', 'tanstack query'
+  ];
+
   return (
-    <div className="w-full p-8 mt-10 text-gray-100 shadow-lg">
-      <div className="container mx-auto">
+    <div className="w-full min-h-screen py-16 px-4 md:px-8 bg-gradient-to-r from-gray-900 to-purple-900">
+      <div className="max-w-6xl mx-auto">
         {/* About Me Section */}
-        <section className="mb-12">
-          <h1 className="text-center text-blue-400 text-4xl mb-8 font-bold">About Me</h1>
-          <p className="text-justify leading-8 font-sans mb-10">
-            I am a Software Engineering student at Kirinyaga University, Kenya. Throughout my academic journey, I have gained both theoretical knowledge and practical skills, building a strong foundation in software engineering. I am proficient in a versatile tech stack, including javascript, Drizzle-orm React.js, Node.js, Express.js,hono.js, python, django and Microsoft SQL Server. My expertise extends to cloud platforms like Microsoft Azure, state management with Redux Toolkit, caching with Redis, containerization with Docker, and version control with Git.I am also a technical blog writer I am committed to continuous learning and innovation in the ever-evolving field of software engineering.
-          </p>
-        </section>
+        <motion.section
+          className="mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+              About Me
+            </h1>
+            <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
+          </div>
+          <div className="max-w-3xl mx-auto bg-gray-800/60 p-8 rounded-xl backdrop-blur-sm border border-gray-700 shadow-xl">
+            <p className="text-lg leading-relaxed text-gray-300">
+              I am a passionate Software Engineering student at Kirinyaga University with hands-on experience in full-stack development. My technical arsenal includes modern JavaScript frameworks like <span className="text-blue-400">React.js</span> and <span className="text-blue-400">Node.js</span>, along with expertise in cloud platforms (<span className="text-blue-400">Microsoft Azure</span>), database management (<span className="text-blue-400">Drizzle ORM</span>, <span className="text-blue-400">MSSQL</span>), and DevOps tools (<span className="text-blue-400">Docker</span>, <span className="text-blue-400">Git</span>).
+            </p>
+            <p className="text-lg leading-relaxed text-gray-300 mt-6">
+              Beyond coding, I contribute as a technical writer and Microsoft Learn Student Ambassador, sharing knowledge about AI and cloud technologies. I thrive in collaborative environments and am constantly exploring innovative solutions to complex problems.
+            </p>
+          </div>
+        </motion.section>
 
         {/* Education Section */}
-        <section className="mb-12">
-          <h1 className="text-center text-blue-400 text-4xl mb-8 font-bold">Education</h1>
-          <div className="flex flex-col md:flex-row justify-around gap-8">
-            {/* Kirinyaga University */}
-            <div className=" p-6 rounded-lg text-center flex flex-col items-center shadow-sm hover:scale-105 transition duration-300">
-              <img src={kyu} className="w-32 mb-5" alt="Kirinyaga University logo" />
-              <h2 className="text-xl text-white font-semibold">Bachelor of Software Engineering</h2>
-              <p className="text-white">Kirinyaga University</p>
-              <p className="text-white">Expected Graduation: October 2025</p>
-            </div>
-            {/* Koiwa Boys High School */}
-            <div className=" p-6 rounded-lg text-center flex flex-col items-center shadow-sm hover:scale-105 transition duration-300">
-              <img src={logo} className="w-32 mb-5" alt="Koiwa Boys High School logo" />
-              <h2 className="text-xl text-white font-semibold">Kenya Certificate of Secondary Education</h2>
-              <p className="text-white">Koiwa Boys High School</p>
-              <p className="text-white">2017 - 2021</p>
-            </div>
+        <motion.section
+          className="mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+              Education
+            </h1>
+            <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
           </div>
-        </section>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Kirinyaga University */}
+            <motion.div
+              className="bg-gray-800/60 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 #60a5fa22' }}
+            >
+              <div className="flex flex-col items-center">
+                <img src={kyu} className="w-28 h-28 object-contain mb-6" alt="Kirinyaga University" />
+                <h2 className="text-2xl font-semibold text-white mb-2">Bachelor of Software Engineering</h2>
+                <p className="text-gray-400 mb-1">Kirinyaga University</p>
+                <p className="text-blue-400 font-medium">2021 - 2025 </p>
+                <div className="mt-4 text-gray-400 text-sm">
+                  <p>Specializing in Software Engineering, Technical blog writing, and Cloud Computing</p>
+                </div>
+              </div>
+            </motion.div>
+            {/* Koiwa Boys High School */}
+            <motion.div
+              className="bg-gray-800/60 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+              whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 #60a5fa22' }}
+            >
+              <div className="flex flex-col items-center">
+                <img src={logo} className="w-28 h-28 object-contain mb-6" alt="Koiwa Boys High School" />
+                <h2 className="text-2xl font-semibold text-white mb-2">KCSE Certificate</h2>
+                <p className="text-gray-400 mb-1">Koiwa Boys High School</p>
+                <p className="text-blue-400 font-medium">2017 - 2021</p>
+                <div className="mt-4 text-gray-400 text-sm">
 
-        {/* Skills & Interests Section */}
-        <section>
-          <h1 className="text-center text-blue-400 text-4xl mb-8 font-bold">Skills & Interests</h1>
-          <div className="flex flex-wrap justify-center gap-4">
-            {['React.js', 'Node.js', 'Express.js', 'Microsoft SQL Server', 'Microsoft Azure', 'Redux Toolkit', , 'Docker', 'Git', 'Hono','Drizzle ORM','typescript'].map((skill) => (
-              <span key={skill} className=" grid  grid-cols-3-cols-3 gap-4 mt-4 border border-white px-4 py-2 rounded-md text-white hover:bg-blue-500 hover:text-black transition duration-300 hover:scale-105 cursor-pointer">
-                {skill}
-              </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.section>
+
+        {/* Skills Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.4 }}
+        >
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+              Technical Skills
+            </h1>
+            <div className="w-24 h-1 bg-blue-400 mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            {skills.map((skill) => (
+              <motion.div
+                key={skill}
+                className="bg-gray-800/70 hover:bg-gray-700 border border-gray-700 hover:border-blue-400 px-4 py-3 rounded-lg text-center transition-all duration-300 hover:scale-105 cursor-default"
+                whileHover={{ scale: 1.08, backgroundColor: '#1e293b', color: '#60a5fa' }}
+              >
+                <span className="text-gray-300 hover:text-white font-medium">{skill}</span>
+              </motion.div>
             ))}
           </div>
-        </section>
+        </motion.section>
       </div>
     </div>
   );
